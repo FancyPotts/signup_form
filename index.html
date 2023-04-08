@@ -10,13 +10,27 @@
 </head>
 <body>
     <div class="container">
-        <div id="sideimage" class="grid-item">Side image by Yann Lauener on Unsplash</div>
+        <div id="sideimage" class="grid-item">Side image by Yann Lauener on Unsplash
+            <div id="logo">
+                Grimoire Werks
+            </div>
+        </div>
         <div id="header" class="grid-item"><h3>This is not a real online service.</h3>Cupcake ipsum dolor sit amet jujubes. Tart wafer muffin pie chocolate cake shortbread danish tart. Jelly-o I love sugar plum jujubes chupa chups.
         <br>
         <br>
-        You <em>know</em> you <strong>don't</strong> want to. <br><br>
-        Let's not fill it out!</div>
-        <div id="form" class="grid-item">Form</div>
+        You <em>know</em> you want to. <br><br>
+        Let's do this thing!</div>
+        <div id="form" class="grid-item">
+            <form action="" method="post">
+                <div><label for="firstname">First name</label><input type="text" id="firstname"></div>
+                <div><label for="lastname">Last name</label><input type="text" id="lastname"></div>
+                <div><label for="email">Email</label><input type="email" id="email"></div>
+                <div><label for="phonenum">Phone Number</label><input type="tel" id="phonenum" placeholder="(123) 456-7890"></div>
+                <div><label for="password">Password</label><input type="password" id="password"></div>
+                <div><label for="passconfirm">Confirm password</label><input type="password" id="passconfirm"></div>
+                <button type="submit">Submit form</button>
+            </form>
+        </div>
         <div id="footer" class="grid-item">&copy; Grimoire Werks 2023</div>
     </div>
 </body>
