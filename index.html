@@ -22,14 +22,15 @@
         Let's do this thing!</div>
         <div id="form" class="grid-item">
             <form action="" method="post">
-                <div><label for="firstname">First name</label><input type="text" id="firstname"></div>
-                <div><label for="lastname">Last name</label><input type="text" id="lastname"></div>
-                <div><label for="email">Email</label><input type="email" id="email"></div>
-                <div><label for="phonenum">Phone Number</label><input type="tel" id="phonenum" placeholder="(123) 456-7890"></div>
-                <div><label for="password">Password</label><input type="password" id="password"></div>
-                <div><label for="passconfirm">Confirm password</label><input type="password" id="passconfirm"></div>
+                <div><label for="firstname">First name</label><input type="text" id="firstname" autocomplete="given-name" required></div>
+                <div><label for="lastname">Last name</label><input type="text" id="lastname" autocomplete="family-name"></div>
+                <div><label for="email">Email</label><input type="email" id="email" autocomplete="email" required></div>
+                <div><label for="phonenum">Phone Number</label><input type="tel" id="phonenum" autocomplete="tel" placeholder="(123) 456-7890"></div>
+                <div><label for="password">Password</label><input type="password" id="password" autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></div>
+                <div><label for="passconfirm">Confirm password</label><input type="password" id="passconfirm" autocomplete="new-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></div>
                 <button type="submit">Submit form</button>
             </form>
+                <div class="comment"></div>
         </div>
         <div id="footer" class="grid-item">&copy; Grimoire Werks 2023</div>
     </div>
