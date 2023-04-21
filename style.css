@@ -49,6 +49,15 @@ input:focus {
     background-repeat: no-repeat;
     background-size: clamp(min(550px), 100%, max(100%));
     background-position: right;
+    display: grid;
+}
+
+#credit {
+    position: relative;
+    color: white;
+    text-align: center;
+    border: 2px solid red;
+    height: 20px;
 }
 
 @media only screen and (max-width: 680px) {
