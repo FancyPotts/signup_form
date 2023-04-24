@@ -6,8 +6,8 @@
     - Made this a responsive page for across-the-board as opposed to three layouts.
 - [ ] Password 
     - [ ] Show passwords
-    - [ ] Show criteria
-    - [ ] Confirmation
+    - [x] Show criteria
+    - [x] Confirmation
     - [ ] Submission with console.table
 - [ ] Success modal
     - [ ] Confirmation modal before changing to actually submitting
