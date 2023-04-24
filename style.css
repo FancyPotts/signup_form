@@ -1,5 +1,5 @@
 body {
-    margin: 30px;
+
 
 }
 
@@ -9,10 +9,10 @@ body {
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 2fr 3fr;
     border-radius: 15px;
-    z-index: 1;
     overflow: hidden;
     background-color: rgb(232, 232, 232);
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
+    margin-inline: 30px;
 }
 
 
@@ -56,7 +56,7 @@ input:focus {
     position: relative;
     color: white;
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 20px;
 }
 
@@ -69,16 +69,29 @@ input:focus {
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        background-image: url(./imgs/sideimage.jpg);
-        background-size: clamp(min(550px), 100%, max(100%));
-        opacity: 0.7;
+        z-index: 1;
+        background-color: rgba(50, 50, 50, 0.3);
     }
 
-    #footer {
-        color:rgb(232, 232, 232);
-        text-shadow: 1px 1px 2px black;
+    .container::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        background-repeat: no-repeat;
+        background-image: url(./imgs/sideimage.jpg);
+        background-size: cover;
+        opacity: 0.4;
+        z-index: -1;
+        margin: 0;
+        overflow: hidden;
     }
-}
+
+    }
+
 
 #logo {
     position: relative;
@@ -113,6 +126,32 @@ button:active {
     background-color: gray;
 }
 
+.hidden {
+    display: none;
+}
+input[type="password"]:focus + .hidden {
+    display: block;
+}
+
+li.invalid {
+    list-style-type: circle;
+}
+
+li.valid {
+    list-style-type: disc;
+}
+
+p.invalid {
+    text-decoration: line-through;
+}
+
+p.valid {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 15px;
+}
 
 #password:invalid,
 #passconfirm:invalid,

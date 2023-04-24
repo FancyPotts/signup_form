@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup form</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./scripts.js"></script>
+    <script src="./scripts.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -48,7 +48,7 @@
             ><input type="email" id="email" autocomplete="email" />
           </div>
           <div>
-            <label for="phonenum">Phone Number</label
+            <label for="phonenum">Phone number</label
             ><input
               type="tel"
               id="phonenum"
@@ -60,19 +60,27 @@
             <label for="password">Password</label
             ><input
               type="password"
-              id="password"
+              id="password1"
               autocomplete="new-password"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
             />
+            <ul id="password-criteria" class="hidden">
+              <li class="invalid">At least 8 characters, <br>no greater than 20</li>
+              <li class="invalid">At least one uppercase letter</li>
+              <li class="invalid">At least one lowercase letter</li>
+              <li class="invalid">At least one digit</li>
+            </ul>
           </div>
           <div>
             <label for="passconfirm">Confirm password</label
             ><input
               type="password"
-              id="passconfirm"
+              id="password2"
               autocomplete="new-password"
-              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}"
             />
+              <p class="hidden invalid">Passwords matches</p>
+            </ul>
           </div>
           <button type="submit">Submit form</button>
         </form>
