@@ -4,6 +4,9 @@
 - [x] Clean up appearance
 - [x] Make three layouts depending on the viewport (Large, medium, small or laptop, pad, phone)
     - Made this a responsive page for across-the-board as opposed to three layouts.
+- [ ] Make password critera and match fill entire row.
+- [ ] Same with submit form button
+- [ ] Create array of objects to retain information based on inputs
 - [ ] Password 
     - [ ] Show passwords
     - [x] Show criteria
