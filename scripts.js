@@ -15,12 +15,6 @@ const passwordInput = document.getElementById("password1");
 const passwordCriteria = document.getElementById("password-criteria");
 const passwordInput2 = document.getElementById("password2");
 const message = document.querySelector("p");
-const submitButton = document.getElementById("submit")
-
-submitButton.addEventListener("click", function(e) {
-  e.preventDefault();
-  console.log("Submitted! Ish.");
-});
 
 const criteriaRegex = [
   /^.{8,20}$/,
